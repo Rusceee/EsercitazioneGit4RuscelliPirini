@@ -22,3 +22,9 @@ class RegistroVoti:
         if not voti:
             raise ValueError(f"Nessun voto registrato per {nome_studente}.")
         return sum(voti) / len(voti)
+
+    def media(self) -> float:
+        voti = [voto for voti_studente in self._voti.values() for voto in voti_studente]
+        if not voti:
+            raise ValueError("Nessun voto registrato.")
+        return sum(voti) / len(voti)
