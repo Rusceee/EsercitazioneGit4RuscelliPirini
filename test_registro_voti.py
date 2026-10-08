@@ -2,7 +2,7 @@ import unittest
 
 from registro_voti import RegistroVoti
 
-
+#og my god
 class TestRegistroVoti(unittest.TestCase):
     def test_media_calcola_la_media_di_tutti_i_voti(self):
         registro = RegistroVoti()
